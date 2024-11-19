@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>React App</title>
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <header >
+      <input type="checkbox" name="" id="toggler" />
+      <label for="toggler" class="fas fa-bars"></label>
+      <div class="logo">
+        <img src="logo.jpeg" />
+      </div>
+
+      <nav class="navbar">
+        <a class="nav-link" href="#Acceuil">Accueil</a>
+        <a class="nav-link" href="#Service.html">Service</a>
+        <a class="nav-link" href="#Boutique">Boutique</a>
+        <a class="nav-link" href="#Contact">Contact</a>
+        <a class="nav-link" href="#Rendez-vous">Rendez-vous</a>
+      </nav>
+      <div class="icons">
+        <a href="#"><i class="fas fa-heart"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+      </div>
+    </header>
+    <br /><br /><br />
+    <div class="banner">
+    <div class="overlay">
+        <h1>Bien venu chez Ourika Optic</h1>
+       <a href="#R" > <p>Contactez-nous !</p></A>
+    </div>
+</div>
+ <SECTION class="barre-collections">
+        <div class="element">
+            <i class="fas fa-star"></i>
+            <p>Les collections les plus élégantes</p>
+        </div>
+        <div class="element">
+            <i class="fas fa-glasses"></i>
+            <p>Des montures parfaitement ajustées à votre budget</p>
+        </div>
+        <div class="element">
+            <i class="fas fa-eye"></i>
+            <p>Des technologies avancées pour une vision optimale</p>
+        </div>
+        <div class="element">
+            <i class="fas fa-hand-holding-heart"></i>
+            <p>Un accompagnement personnalisé adapté à vos attentes</p>
+        </div>
+    </SECTION>
+    <div id="root"></div>
+    <div class="adresse">
+    <iframe
+    className="full-width-map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.2746958787498!2d-7.807791499999999!3d31.378988399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb0017dc163bea7%3A0x9c835ab2d1a4257f!2sOurika%20optic!5e0!3m2!1sfr!2sma!4v1730882267242!5m2!1sfr!2sma"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>À propos</h3>
+          <p>
+            Livraison gratuite à partir de 1000 Dh<br />
+            RETOURS GRATUITS DANS UN DÉLAI DE 5 JOURS<br />
+            Garantie de 365 jours<br />
+            PAIEMENT 100% SÉCURISÉ
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Adresse :DR TIMSKARINE
+              TALRMTE OURIKA
+            </li>
+            <li>
+              <i class="fas fa-phone"></i> Téléphone :
+              <a href="tel:+212629688879">+212 6 29 68 88 79</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i> Email :
+              <a href="mailto:Ourika.optic@gmail.com">Ourika.optic@gmail.com</a>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i> Horaires de travail : Lundi -
+              Vendredi: 8h30 - 20h00<br />Samedi :9h00 - 17h00
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Suivez-nous</h3>
+          <ul class="social-media">
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/ourika_optic?igsh=cnY0ZmZ5cHgyNXA5"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="+212629688879"><i class="fab fa-whatsapp"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-note">&copy; 2025 VotreSite. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+      // Animation pour afficher le footer et ses colonnes
+      window.addEventListener("load", function () {
+        document.getElementById("footer").classList.add("show");
+        document.querySelectorAll(".footer-column").forEach((column, index) => {
+          setTimeout(() => column.classList.add("show"), index * 200);
+        });
+      });
+    </script>
+  </body>
+</html>
